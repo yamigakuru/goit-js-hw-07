@@ -22,7 +22,7 @@ createButton.addEventListener('click', () => {
 destroyButton.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
-    const fragment = document.createDocumentFragment(); // Створюємо фрагмент DOM
+    const fragment = document.createDocumentFragment(); 
 
     for (let i = 0; i < amount; i++) {
         const box = document.createElement('div');
@@ -30,10 +30,10 @@ function createBoxes(amount) {
         box.style.backgroundColor = getRandomHexColor();
         box.style.width = `${30 + i * 10}px`;
         box.style.height = `${30 + i * 10}px`;
-        fragment.appendChild(box); // Додаємо елемент до фрагменту
+        fragment.appendChild(box); 
     }
 
-    boxesContainer.appendChild(fragment); // Додаємо фрагмент до основного контейнера
+    boxesContainer.appendChild(fragment); 
 }
 
 function destroyBoxes() {
